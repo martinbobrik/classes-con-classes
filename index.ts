@@ -10,6 +10,9 @@ class Edificio{
         piso ? piso.pushDepartamento(departamento) : console.log("No existe ese piso");
 
     }
+    
+    
+    
 
     getDepartamentosByPiso(nombreDePiso:string): Departamento[]{
         const piso = this.pisos.find(p => p.nombre === nombreDePiso)
